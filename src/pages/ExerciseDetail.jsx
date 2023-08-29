@@ -26,6 +26,9 @@ const ExerciseDetail = () => {
 
       const targetMuscleExercisesData = await fetchData(`${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`, exerciseOptions)
       setTargetMuscleExercises(targetMuscleExercisesData)
+       console.log(targetMuscleExercisesData)
+
+
     }
 
     fetchExercisesData()
